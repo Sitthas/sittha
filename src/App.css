@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", sans-serif;
+}
+
+html,body,#root{
+  width:100%;
+  height:100%;
+}
+
+body{
+  background:#000;
+}
+
+
+/* หน้า Login */
+.login-page{
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  radial-gradient(circle at top,#ff0000,#000 60%);
+
+  background-size:200% 200%;
+  animation:bgMove 8s infinite alternate;
+}
+
+
+/* กล่อง Login */
+.login-box{
+
+  width:380px;
+
+  background:rgba(15,15,15,0.9);
+
+  padding:40px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  border:1px solid #ff0000;
+
+  box-shadow:
+  0 0 20px rgba(255,0,0,0.6),
+  0 0 60px rgba(255,0,0,0.3);
+
+  backdrop-filter:blur(10px);
+}
+
+
+/* หัวข้อ */
+.login-box h1{
+
+  margin-bottom:10px;
+
+  color:#fff;
+
+  font-size:32px;
+
+  text-shadow:
+  0 0 10px red;
+
+}
+
+
+.login-box p{
+
+  margin-bottom:25px;
+
+  color:#aaa;
+
+}
+
+
+/* ช่องกรอก */
+.login-box input{
+
+  width:100%;
+
+  padding:14px;
+
+  margin:10px 0;
+
+  border-radius:10px;
+
+  border:none;
+
+  outline:none;
+
+  background:#111;
+
+  color:white;
+
+  border:1px solid #333;
+
+}
+
+
+.login-box input:focus{
+
+  border:1px solid red;
+
+  box-shadow:
+  0 0 10px red;
+
+}
+
+
+/* ปุ่ม Login */
+.login-box button{
+
+  width:100%;
+
+  padding:14px;
+
+  margin-top:15px;
+
+  border:none;
+
+  border-radius:10px;
+
+
+  background:
+  linear-gradient(
+    45deg,
+    #ff0000,
+    #990000
+  );
+
+
+  color:white;
+
+  font-size:18px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+
+/* Hover */
+.login-box button:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:
+  0 0 20px red;
+
+}
+
+
+/* ปุ่มปิด */
+.login-box button:disabled{
+
+  background:#555;
+
+  cursor:not-allowed;
+
+}
+
+
+/* Error */
+.error{
+
+  margin-top:15px;
+
+  color:#ff4444;
+
+  font-size:14px;
+
+}
+
+
+
+/* Animation Background */
+@keyframes bgMove{
+
+  0%{
+    background-position:0% 50%;
+  }
+
+
+  100%{
+    background-position:100% 50%;
+  }
+
+}
