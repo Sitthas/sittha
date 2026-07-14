@@ -22,7 +22,7 @@ export default function Dashboard() {
     <div style={{ padding: 30 }}>
 
       <h1 style={{color:"red"}}>
-          อยากเห็นขอบลับแม่น้ำทักส่วนตัวมา
+          อยากเห็นของลับแม่น้ำทักส่วนตัวมา
       </h1>
 
       <h2 style={{color:"white"}}>
